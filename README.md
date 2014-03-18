@@ -22,13 +22,13 @@ There is a pure CSS universal solution of "text-overflow: ellipsis"
 
 - single-line
 
-```
+```html
 &lt;p class=&quot;text-overflow&quot; style=&quot;width: 100px;&quot;&gt;Bruna Marquezine e Giovanna Antonelli não param! Mesmo com o domingo.&lt;/p&gt;
 ```
 
 - multi-line
 
-```
+```html
 &lt;div class="text-overflow-block" style="width: 100px; height: 200px;"&gt;
     &lt;p&gt;تكثف مباحث القليوبيه جهودها للقبض علي مسلحين اقتحموا كمين شرطه متحرك بمدخل مدينه العبور بطريق بلبيس الصحراوي، حيث قام الجناه بفتح النار علي القوات عندما حاول افراده ايقافها للتفتيش دون اصابات، وتبادلت معهم القوات اطلاق الرصاص لكن المهاجمين فروا هاربين وتركوا السياره علي جانب الطريق، وكشفت المعاينه المبدئيه ان السياره مبلغ بسرقتها وبها اثار طلقات بفتح النار علي القوات عندما حاول افراده ايقافها للتفتيش دون اصابات، وتبادلت معهم القوات اطلاق الرصاص لكن المهاجمين فروا هاربين وتركوا السياره علي جانب الطريق، وكشفت المعاينه المبدئيه ان السياره مبلغ بسرقتها وبها اثار طلقات بفتح النار علي القوات عندما حاول افراده ايقافها للتفتيش دون اصابات، وتبادلت معهم القوات اطلاق الرصاص لكن المهاجمين فروا هاربين وتركوا السياره علي جانب الطريق، وكشفت المعاينه المبدئيه ان السياره مبلغ بسرقتها وبها اثار طلقات&lt;/p&gt;
 &lt;/div&gt;
@@ -36,19 +36,15 @@ There is a pure CSS universal solution of "text-overflow: ellipsis"
 
 - custom ellipsis
 
-    * Way 1
+Modify `.text-overflow-block:after`
 
-modify `.text-overflow-block:after`
-
-```
+```css
 .text-overflow-block:after{ content: "xxxx";}
 ```
 
-    * Way 2
+Or use built-in class: `text-overflow_end`
 
-use built-in class: `text-overflow_end`
-
-```
+```css
 .text-overflow-block:after{ display: none;}
 .text-overflow_end{
     display: block;
