@@ -2,6 +2,18 @@
 
 There is a pure CSS universal solution of "text-overflow: ellipsis"
 
+## Compatibility
+
+Chrome 1+ / Firefox 10+ / Opera 9+ / IE 8+
+
+## Feature
+
+- single/multi line supports
+- rtl/ltr supports
+- Responsive supports
+- custom ellipsis supports
+- i18n supports
+
 ### Why not use block + "overflow:hidden"?
 
 - The end of the text may appear half the characters
@@ -58,18 +70,6 @@ There is a pure CSS universal solution of "text-overflow: ellipsis"
     &lt;span class="text-overflow_end"&gt;&lt;a href="#"&gt;more&lt;/a&gt;&lt;/span&gt;
 &lt;/div&gt;
 ```
-
-## Compatibility
-
-Chrome 1+ / Firefox 10+ / Opera 9+ / IE 8+
-
-## Feature
-
-- single/multi line supports
-- rtl/ltr supports
-- Responsive supports
-- custom ellipsis supports
-- i18n supports
 
 ## Issues
 
