@@ -42,10 +42,12 @@ Chrome 1+ / Firefox 10+ / Opera 9+ / IE 8+
 
 ```html
 <style>
-.mod-custom{width: 100px; height: 200px; line-height: 25px;}
+/*Custom width/height/line-height*/
+.mod-custom.text-overflow-block{
+    width: 100px; height: 200px; line-height: 25px;
+}
 /*Notice: set height/line-height same as mod-custom*/
-.mod-custom .text-overflow-block,
-.mod-custom .text-overflow-block:after{
+.mod-custom.text-overflow-block:before{
     height: 200px; line-height: 25px;
 }
 </style>
