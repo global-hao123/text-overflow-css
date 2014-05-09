@@ -1,6 +1,7 @@
 /* Shim */
 .text-overflow-block:before{
     float: right;
+    height: 100%;
 }
 
 /* Text node */

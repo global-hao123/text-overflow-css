@@ -32,6 +32,8 @@ text-overflow universal solution
     content:"";
     float: left;
     width: 5px;
+    height: 100%;
+    line-height: inherit;
 }
 
 /* Text node */
